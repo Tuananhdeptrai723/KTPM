@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ktpm/static/css/main.de25cfa6.css",
-    "main.js": "/ktpm/static/js/main.cb895757.js",
-    "static/js/787.a55c13f5.chunk.js": "/ktpm/static/js/787.a55c13f5.chunk.js",
-    "static/media/avt2.jpg": "/ktpm/static/media/avt2.9f63123eec08a42f2fd6.jpg",
-    "index.html": "/ktpm/index.html",
-    "main.de25cfa6.css.map": "/ktpm/static/css/main.de25cfa6.css.map",
-    "main.cb895757.js.map": "/ktpm/static/js/main.cb895757.js.map",
-    "787.a55c13f5.chunk.js.map": "/ktpm/static/js/787.a55c13f5.chunk.js.map"
+    "main.css": "/Tuananhdeptrai723/KTPM/static/css/main.de25cfa6.css",
+    "main.js": "/Tuananhdeptrai723/KTPM/static/js/main.ee740ec5.js",
+    "static/js/787.a55c13f5.chunk.js": "/Tuananhdeptrai723/KTPM/static/js/787.a55c13f5.chunk.js",
+    "static/media/avt2.jpg": "/Tuananhdeptrai723/KTPM/static/media/avt2.9f63123eec08a42f2fd6.jpg",
+    "index.html": "/Tuananhdeptrai723/KTPM/index.html",
+    "main.de25cfa6.css.map": "/Tuananhdeptrai723/KTPM/static/css/main.de25cfa6.css.map",
+    "main.ee740ec5.js.map": "/Tuananhdeptrai723/KTPM/static/js/main.ee740ec5.js.map",
+    "787.a55c13f5.chunk.js.map": "/Tuananhdeptrai723/KTPM/static/js/787.a55c13f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de25cfa6.css",
-    "static/js/main.cb895757.js"
+    "static/js/main.ee740ec5.js"
   ]
 }
