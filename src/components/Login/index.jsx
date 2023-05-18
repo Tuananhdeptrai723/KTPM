@@ -17,27 +17,27 @@ export default function Login() {
     const email = data.get("email");
     const password = data.get("password");
     const emailRegex = /^\S+@\S+\.\S+$/;
-
+  
     if (!email || !password) {
       alert("Please fill in both email and password fields");
       return;
     }
-
+  
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address");
       return;
     }
-
+  
     if (password.length < 6) {
       alert("Password must be at least 6 characters long");
       return;
     }
-
+  
     const account = {
       identifier: email,
       password: password,
     };
-
+    
     getAPI(account);
   };
 
@@ -49,6 +49,7 @@ export default function Login() {
       localStorage.setItem("data", JSON.stringify(res.data.jwt));
     });
   }
+}
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -63,48 +64,48 @@ export default function Login() {
 
   // dùng axios để gọi api
 
-  //   return (
-  //     <div className="login">
-  //       <form onSubmit={handleSubmit} >
-  //         <div className="header-login">
-  //           <h3>Welcome</h3>
-  //           <p>login to your account</p>
-  //         </div>
-  //         <div className="body-login">
-  //           <label>Email:</label>
-  //           <br />
-  //           <input type="text" id="email" name="email" placeholder="Email" />
-  //           <br />
-  //           <label>Password:</label>
-  //           <br />
-  //           <input
-  //             type="password"
-  //             id="password"
-  //             name="password"
-  //             placeholder="Password"
-  //           />
-  //           <br />
-  //           <button type="submit">Login</button>
-  //         </div>
-  //       </form>
-  //     </div>
+//   return (
+//     <div className="login">
+//       <form onSubmit={handleSubmit} >
+//         <div className="header-login">
+//           <h3>Welcome</h3>
+//           <p>login to your account</p>
+//         </div>
+//         <div className="body-login">
+//           <label>Email:</label>
+//           <br />
+//           <input type="text" id="email" name="email" placeholder="Email" />
+//           <br />
+//           <label>Password:</label>
+//           <br />
+//           <input
+//             type="password"
+//             id="password"
+//             name="password"
+//             placeholder="Password"
+//           />
+//           <br />
+//           <button type="submit">Login</button>
+//         </div>
+//       </form>
+//     </div>
 
-  //   );
-
-
+//   );
 
 
-  // }
 
 
-  // import {
-  //     Button,
-  //     Form,
-  //     Input,
-  //   } from 'antd';
-  //   import { useState } from 'react';
+// }
 
 
+// import {
+//     Button,
+//     Form,
+//     Input,
+//   } from 'antd';
+//   import { useState } from 'react';
+  
+  
   // const formItemLayout = {
   //   labelCol: {
   //     xs: {
@@ -135,69 +136,69 @@ export default function Login() {
   //     },
   //   },
   // };
-  //   const App = () => {
-  //     const [form] = Form.useForm();
-  //     const onFinish = values => {
-  //       console.log('Received values of form: ', values);
-  //     };
+//   const App = () => {
+//     const [form] = Form.useForm();
+//     const onFinish = values => {
+//       console.log('Received values of form: ', values);
+//     };
+  
+  
+//     const [autoCompleteResult, setAutoCompleteResult] = useState([]);
+  
+  
+//     return (
+//       <Form 
+  
+//         form={form}
+//         name="register"
+//         onFinish={onFinish}
+//         initialValues={{
+//           residence: ['zhejiang', 'hangzhou', 'xihu'],
+//           prefix: '86',
+//         }}
+//         style={{
+//           maxWidth: 600,
+//         }}
+  
+//       >
+//         <Form.Item
+//           name="email"
+//           label="E-mail"
+//           rules={[
+//             {
+//               type: 'email',
+//               message: 'The input is not valid E-mail!',
+//             },
+//             {
+//               required: true,
+//               message: 'Please input your E-mail!',
+//             },
+//           ]}
+//         >
+//           <Input />
+//         </Form.Item>
+  
+//         <Form.Item
+//           name="password"
+//           label="Password"
+//           rules={[
+//             {
+//               required: true,
+//               message: 'Please input your password!',
+//             },
+//           ]}
+//           hasFeedback
+//         >
+//           <Input.Password />
+//         </Form.Item>
+  
+//         <Form.Item >
+//           <Button type="primary" htmlType="submit">
+//             Register
+//           </Button>
+//         </Form.Item>
+//       </Form>
+//     );
+//   };
+//   export default App;
 
-
-  //     const [autoCompleteResult, setAutoCompleteResult] = useState([]);
-
-
-  //     return (
-  //       <Form 
-
-  //         form={form}
-  //         name="register"
-  //         onFinish={onFinish}
-  //         initialValues={{
-  //           residence: ['zhejiang', 'hangzhou', 'xihu'],
-  //           prefix: '86',
-  //         }}
-  //         style={{
-  //           maxWidth: 600,
-  //         }}
-
-  //       >
-  //         <Form.Item
-  //           name="email"
-  //           label="E-mail"
-  //           rules={[
-  //             {
-  //               type: 'email',
-  //               message: 'The input is not valid E-mail!',
-  //             },
-  //             {
-  //               required: true,
-  //               message: 'Please input your E-mail!',
-  //             },
-  //           ]}
-  //         >
-  //           <Input />
-  //         </Form.Item>
-
-  //         <Form.Item
-  //           name="password"
-  //           label="Password"
-  //           rules={[
-  //             {
-  //               required: true,
-  //               message: 'Please input your password!',
-  //             },
-  //           ]}
-  //           hasFeedback
-  //         >
-  //           <Input.Password />
-  //         </Form.Item>
-
-  //         <Form.Item >
-  //           <Button type="primary" htmlType="submit">
-  //             Register
-  //           </Button>
-  //         </Form.Item>
-  //       </Form>
-  //     );
-  //   };
-  //   export default App;
-}

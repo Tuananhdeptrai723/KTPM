@@ -1,0 +1,11 @@
+.Logout_button {
+    padding: 20px;
+    background-color: #8767E1;
+
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 40px;
+    border: none;
+    border-radius: 5px;
+}
