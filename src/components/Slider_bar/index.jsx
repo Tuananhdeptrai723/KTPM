@@ -52,13 +52,15 @@ const Slide_bar = ({ children }) => {
             {
               key: '1',
               icon: <img src={sb_img}></img>,
-              label: 'Manage Profile',
+              label: 'Manager profile',
             },
+
             {
-              key: '2',
+              key: '3',
               icon: <img src={sb_img}></img>,
-              label: <Link to="/garage_owner">List User</Link>,
+              label: <Link to="/Garage_manage">list user</Link>,
             },
+
           ]}
         />
       </Sider>

@@ -17,27 +17,27 @@ export default function Login() {
     const email = data.get("email");
     const password = data.get("password");
     const emailRegex = /^\S+@\S+\.\S+$/;
-  
+
     if (!email || !password) {
       alert("Please fill in both email and password fields");
       return;
     }
-  
+
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address");
       return;
     }
-  
+
     if (password.length < 6) {
       alert("Password must be at least 6 characters long");
       return;
     }
-  
+
     const account = {
       identifier: email,
       password: password,
     };
-    
+
     getAPI(account);
   };
 
@@ -104,8 +104,8 @@ export default function Login() {
 //     Input,
 //   } from 'antd';
 //   import { useState } from 'react';
-  
-  
+
+
   // const formItemLayout = {
   //   labelCol: {
   //     xs: {
@@ -141,14 +141,14 @@ export default function Login() {
 //     const onFinish = values => {
 //       console.log('Received values of form: ', values);
 //     };
-  
-  
+
+
 //     const [autoCompleteResult, setAutoCompleteResult] = useState([]);
-  
-  
+
+
 //     return (
 //       <Form 
-  
+
 //         form={form}
 //         name="register"
 //         onFinish={onFinish}
@@ -159,7 +159,7 @@ export default function Login() {
 //         style={{
 //           maxWidth: 600,
 //         }}
-  
+
 //       >
 //         <Form.Item
 //           name="email"
@@ -177,7 +177,7 @@ export default function Login() {
 //         >
 //           <Input />
 //         </Form.Item>
-  
+
 //         <Form.Item
 //           name="password"
 //           label="Password"
@@ -191,7 +191,7 @@ export default function Login() {
 //         >
 //           <Input.Password />
 //         </Form.Item>
-  
+
 //         <Form.Item >
 //           <Button type="primary" htmlType="submit">
 //             Register
@@ -202,3 +202,4 @@ export default function Login() {
 //   };
 //   export default App;
 
+}
