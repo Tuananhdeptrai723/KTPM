@@ -137,7 +137,7 @@ function App() {
             <Link to="/create_owner">Add owner</Link>
           </Button>
           <Button style={{ backgroundColor: '#8767E1', marginLeft: '160px' }}>
-            <Link to="/create_garage">Add garage</Link>
+            <Link to="/create_garage">Add user</Link>
           </Button>
         </span>
       </Space>

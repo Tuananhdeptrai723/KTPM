@@ -65,7 +65,7 @@ function Update_managetment() {
                         rules={[{ required: true, message: 'Please input your name!' }]}
                         name="Name"
                     ></Form.Item>
-                    <Input size="large" placeholder="Enter Management name" value={management?.name} />
+                    <Input size="large" placeholder="Enter name" value={management?.name} />
                 </Col>
                 <Col className="gutter-row" span={8}>
                     <Form.Item className='Management_require'
@@ -73,7 +73,7 @@ function Update_managetment() {
                         rules={[{ required: true, message: 'Please input your email!' }]}
                         name="Email"
                     ></Form.Item>
-                    <Input size="large" placeholder="Enter Management email"
+                    <Input size="large" placeholder="Enter email"
                         value={management?.email}
                     />
 
@@ -84,7 +84,7 @@ function Update_managetment() {
                         rules={[{ required: true, message: 'Please input your username!' }]}
                         name="PhoneNumber"
                     ></Form.Item>
-                    <Input size="large" placeholder="Enter Management PhoneNumber"
+                    <Input size="large" placeholder="Enter  PhoneNumber"
                         value={management?.phoneNumber}
                     />
 
@@ -97,7 +97,7 @@ function Update_managetment() {
                         name="Address"
                     ></Form.Item>
 
-                    <Input size="large" placeholder="Enter Management Address"
+                    <Input size="large" placeholder="Enter Address"
                         value={management?.address}
                     />
 

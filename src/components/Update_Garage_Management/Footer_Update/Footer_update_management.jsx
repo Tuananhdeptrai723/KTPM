@@ -3,11 +3,11 @@ import { useState } from 'react';
 import './Footer_update_management.css';
 import { Link } from 'react-router-dom';
 
-const mockData = [{ key: '0', title: 'Garage ABC', description: 'description of content1' },
-{ key: '1', title: 'TLS', description: 'description of content2' },
-{ key: '2', title: 'AHC', description: 'description of content3' },
-{ key: '3', title: 'CB Garage', description: 'description of content4' },
-{ key: '4', title: 'UCQ', description: 'description of content5' },];
+const mockData = [{ key: '0', title: 'Rice', description: 'description of content1' },
+{ key: '1', title: 'Toy', description: 'description of content2' },
+{ key: '2', title: 'Cocacola', description: 'description of content3' },
+{ key: '3', title: 'Pepsi', description: 'description of content4' },
+{ key: '4', title: 'Snack', description: 'description of content5' },];
 
 const oriTargetKeys = mockData.filter((item) => Number(item.key) % 3 > 1).map((item) => item.key);
 

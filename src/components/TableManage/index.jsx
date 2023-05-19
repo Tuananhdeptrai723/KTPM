@@ -134,7 +134,7 @@ function App() {
                         onClick={() => { callApi() }}
                     >Search</Button>
                     <Button style={{ backgroundColor: '#8767E1', marginLeft: '160px', }}>
-                        <Link to="/create_garage">Add garage</Link></Button>
+                        <Link to="/create_garage">Add user</Link></Button>
                 </span>
             </Space>
             <Table columns={columns} dataSource={data} />

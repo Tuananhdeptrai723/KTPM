@@ -65,7 +65,7 @@ function CreateOwner() {
       messageApi.open({
         key,
         type: 'success',
-        content: 'Success! You have created a new owner! ',
+        content: 'Success! You have created a new user! ',
         duration: 2,
       });
     }, 1000);
@@ -105,7 +105,7 @@ function CreateOwner() {
   // search garage
   // const [garageList, setGarageList] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const garageList = ['Garage ABC', 'TLS', 'AHC', 'CB Garage', 'UCQ'];
+  const garageList = ['Toy', 'Cocacola', 'Pepsi', 'Snack', 'Rice'];
 
   const handleSearch = e => {
     setSearchTerm(e.target.value);
@@ -163,7 +163,7 @@ function CreateOwner() {
                   {...field}
                   style={{ width: '100%' }}
                   size="large"
-                  placeholder="Enter owner name"
+                  placeholder="Enter user name"
                 />
               )}
             />
@@ -183,7 +183,7 @@ function CreateOwner() {
                 <Input
                   size="large"
                   {...field}
-                  placeholder="Enter owner email"
+                  placeholder="Enter user email"
                 />
               )}
             />
@@ -203,7 +203,7 @@ function CreateOwner() {
                 <Input
                   size="large"
                   {...field}
-                  placeholder="Enter owner username"
+                  placeholder="Enter user username"
                 />
               )}
             />
@@ -226,7 +226,7 @@ function CreateOwner() {
                   {...field}
                   style={{ width: '100%' }}
                   size="large"
-                  placeholder="Enter owner password"
+                  placeholder="Enter user password"
                 />
               )}
             />
@@ -246,7 +246,7 @@ function CreateOwner() {
                 <Input
                   size="large"
                   {...field}
-                  placeholder="Enter owner phone number"
+                  placeholder="Enter user phone number"
                 />
               )}
             />
@@ -266,7 +266,7 @@ function CreateOwner() {
                 <Select
                   size="large"
                   {...field}
-                  placeholder="Select owner gender"
+                  placeholder="Select user gender"
                   allowClear
                 >
                   <Option value="male">male</Option>

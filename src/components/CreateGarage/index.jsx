@@ -107,7 +107,7 @@ function CreateGarage() {
   // search garage
   // const [garageList, setGarageList] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const garageList = ['Garage ABC', 'TLS', 'AHC', 'CB Garage', 'UCQ'];
+  const garageList = ['Toy', 'Cocacola', 'Pepsi', 'Snack', 'Rice'];
 
   const handleSearch = e => {
     setSearchTerm(e.target.value);
@@ -165,7 +165,7 @@ function CreateGarage() {
                   {...field}
                   style={{ width: '100%' }}
                   size="large"
-                  placeholder="Enter garage name"
+                  placeholder="Enter user name"
                 />
               )}
             />
@@ -185,7 +185,7 @@ function CreateGarage() {
                 <Input
                   size="large"
                   {...field}
-                  placeholder="Enter garage email"
+                  placeholder="Enter user email"
                 />
               )}
             />
@@ -228,7 +228,7 @@ function CreateGarage() {
                   {...field}
                   style={{ width: '100%' }}
                   size="large"
-                  placeholder="Enter garage address"
+                  placeholder="Enter user address"
                 />
               )}
             />
@@ -299,7 +299,7 @@ function CreateGarage() {
               render={({ field }) => (
                 <Select
                   size="large"
-                  placeholder="Select a garage owner"
+                  placeholder="Select a user owner"
                   {...field}
                   allowClear
                 >
@@ -392,7 +392,7 @@ function CreateGarage() {
           <div className={styles['checkbox-garage']}>
             <Input
               size="large"
-              placeholder="Search for garages .."
+              placeholder="Search for items .."
               value={searchTerm}
               onChange={handleSearch}
             />
@@ -411,7 +411,7 @@ function CreateGarage() {
             </div>
           </div>
           <div className={styles['list-garage']}>
-            <label htmlFor="">Select garages ({checkedBoxes.length})</label>
+            <label htmlFor="">Select items ({checkedBoxes.length})</label>
             {checkedBoxes.map(item => (
               <div className={styles['pickitem']} key={item}>
                 <div className="pickitem-name">{item}</div>
